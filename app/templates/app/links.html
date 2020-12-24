@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<a href ="https://www.e-katalog.ru" target="_blank"> <img src="{% static 'app/content/e-katalog.jpg' %}" alt="Logo 1"/></a>
+<p>Сайт с подбором комплектующих, на котором вы можете сравнить различные товары.</p>
+<a href ="https://www.ixbt.com" target="_blank"> <img src="{% static 'app/content/ixbt.png' %}" alt="Logo 1"/></a>
+<p>Сайт с обзорами на различные комплектующие.</p>
+<a href ="https://overclockers.ru" target="_blank"> <img src="{% static 'app/content/overclockers.png' %}" alt="Logo 1"/></a>
+<p>Сайт с разнообразными материалами в компьютерной сфере. Так же, есть обзоры на комплектующие.</p>
+
+{% endblock %}
